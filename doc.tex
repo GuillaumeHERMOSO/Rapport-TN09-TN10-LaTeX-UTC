@@ -1,11 +1,8 @@
 \documentclass[11pt]{report}
-
 \usepackage{lib/utc-report-template}
 \usepackage{lib/glossaire}
 
-
-
-
+% Meta informations
 \author{Prenom NOM}
 \title{Rapport de stage}
 
@@ -13,28 +10,43 @@
 
 
 \begin{document}
+    % Import des macros si besoin
     \include{lib/macro}
+
+    %Creation de la page de garde
     \frontpage
+
+
     \pagenumbering{arabic}
-    
+
+    % Remerciements
     \include{parts/1-Remerciements.tex}
+
+    % Ne pas afficher les sous-sections dans la table des matières : 0=chapitre, 1=section, 2=sous-section
     \setcounter{tocdepth}{1}
+
+    % Sommaire
     \tableofcontents
     
-    
+    % Les parties du rapport
     \include{parts/2-Introduction}
-    \include{parts/02-presentation}
-    \include{parts/03-mission}
-    \include{parts/04-mes_realisations}
-    \include{parts/05-conclusion}
+    \include{parts/3-Presentation}
+    \include{parts/4-Missions}
+    \include{parts/5-Realisations}
+    \include{parts/6-Conclusion}
+
+    % Glossaire
     \clearpage
     \printglossaries
     
+    % Bibliographie
     \printbibliography[heading=bibintoc]
     
+    %Liste des figures et des tableaux
     \listoffigures
     %\listoftables
 
-    \include{parts/06-Annexes} 
+    % Annexes
+    \include{parts/7-Annexes} 
     
 \end{document}

@@ -19,3 +19,8 @@ Pour utiliser ce template sur Overleaf, suivez ces étapes :
 2. Sur Overleaf, créez un nouveau projet.
 3. Importez le fichier ZIP en tant que projet existant (Upload Zipped Project).
 4. Vous pouvez maintenant modifier le template directement sur Overleaf.
+
+
+## Code snippets
+Dans la partie Introduction, vous trouverez des exemples de macro-outils et de la manière d'utiliser le glossaire et la bibliographie dans votre document LaTeX. Le répertoire "parts/introduction" contient des extraits de code.
+
