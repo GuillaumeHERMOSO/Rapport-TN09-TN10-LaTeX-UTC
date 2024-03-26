@@ -1,4 +1,5 @@
 # Template LaTeX pour Rapport de Stage TN09-TN10
+![](https://github.com/GuillaumeHERMOSO/Rapport-TN09-TN10-LaTeX-UTC/blob/main/rapport.png)
 
 Ce template LaTeX est conçu pour les rapports de stage TN09 ou TN10 à l'Université de technologie de Compiègne. 
 
@@ -6,7 +7,6 @@ Il suit les recommandations du GI pour le plan : [[Structure du rapport](TN09_TN
 
 
 Inspiré par le template de l'UTT (Axel Mousset, Aurélien Labate): [Template UTT ST09/ST10](https://www.overleaf.com/latex/templates/utt-st09-slash-st10/kwpzjqwhtqjt)
-
 
 
 Modifiez-le selon vos besoins.
