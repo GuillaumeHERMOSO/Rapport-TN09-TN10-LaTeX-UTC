@@ -1,0 +1,43 @@
+\newcommand{\boxTEXTE}[2]{
+  \begin{tcolorbox}
+  [colframe=grisUTC,title={#1}, arc = 10]
+    #2
+  \end{tcolorbox}
+  }
+
+%\boxTEXTE{My title}{My text}
+
+
+\newcommand{\boxIMAGE}[5]{
+    \begin{center}
+        \begin{tcolorbox}[
+            colback=white,
+            colframe=grisClairUTC,
+            halign=center,
+            arc=10pt,     
+            width=#1,
+            ]
+            \begin{figure}[H]
+                \captionsetup{justification=centering}
+                \centering
+                \includegraphics[width= #2]{#3}
+                \caption{#4}
+                \label{#5}
+            \end{figure}
+        \end{tcolorbox}
+    \end{center}
+}
+%\boxIMAGE{Bloc width}{Image width}{Image}{Caption}{Label}
+
+\newcommand{\boxVide}[1]{
+  \begin{tcolorbox}[
+            colback=white,
+            colframe=grisClairUTC,
+            halign=center,
+            arc=10pt,     
+            ]
+    #1
+  \end{tcolorbox}
+  }
+
+%\boxVide{CE QUE TU VEUX}

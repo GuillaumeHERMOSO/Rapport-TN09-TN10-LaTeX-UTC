@@ -1,0 +1,105 @@
+\newcommand{\frontpage}{\include{lib/frontpage}}
+
+% French packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+
+% Geometry
+\usepackage[top=2cm, bottom=2cm, left=3cm, right=3cm]{geometry}
+
+% Fonts
+\usepackage{lmodern}
+\renewcommand{\familydefault}{\sfdefault}
+
+% Outline text
+\usepackage{fancybox}
+
+% Text pos to position texts in absolute coords for the first page.
+\usepackage[absolute,overlay]{textpos}
+
+% Table with adjustable sizes.
+\usepackage{tabularx, makecell}
+
+% Custom colors
+\usepackage{xcolor}
+    \definecolor{jauneUTC}{RGB}{255,217,17}
+    \definecolor{jauneClairUTC}{RGB}{255,245,204}
+    \definecolor{grisUTC}{RGB}{89,89,89}
+    \definecolor{grisClairUTC}{RGB}{208,208,208}
+
+% Assets path
+\usepackage{graphicx}
+    \graphicspath{{./assets/}}
+
+\usepackage{floatrow}
+
+% Maths
+\usepackage{amsmath}
+
+% Multicol
+\usepackage{multicol}
+
+
+% Header/footer
+\usepackage{fancyhdr}
+% Redefine the plain page style
+    \fancypagestyle{UTC}{
+        \fancyhf{}% Clear header and footer
+        \setlength{\headheight}{27pt}
+        \fancyfoot[C]{\thepage}
+        \fancyhead[L]{\leftmark{}\vspace{0.1cm}}
+        \fancyhead[R]{\includegraphics[height=22pt]{assets/UTC.eps}}
+    
+    
+
+        \let\oldheadrule\headrule% Copy \headrule into \oldheadrule
+        \renewcommand{\headrule}{\color{jauneUTC}\oldheadrule}% Add colour to \headrule
+        \renewcommand{\headrulewidth}{2pt}
+        
+        % Rename table of contents
+        \addto\captionsfrench{\renewcommand{\contentsname}{Sommaire}}
+    }
+
+    \fancypagestyle{plain}{
+        \fancyhf{}
+        \fancyhead[C]{\includegraphics[height=22pt]{assets/UTC.eps}}
+        \fancyfoot[C]{\thepage}
+ 
+    }
+
+\pagestyle{UTC}
+
+% Change titleformat:
+\usepackage{titlesec}
+%def chapter
+    \titleformat{\chapter}[display]
+        {\centering \normalfont\huge\bfseries}{Partie\ \thechapter} {0pt}{\huge}  
+        \titlespacing*{\chapter}{20pt}{-25pt}{20pt}
+
+%def chapter paragraph
+    \titleformat{\paragraph}[display]
+        {\normalfont}{\theparagraph}{0pt}{\underline}
+        \titlespacing*{\paragraph}{20pt}{10pt}{3pt}
+
+
+
+% Box
+\usepackage{tcolorbox}
+
+
+% Bibliographie
+\usepackage[backref=true,backend=biber,natbib=true,hyperref=true,sorting=none]{biblatex}
+    \addbibresource{references.bib}
+
+
+% Hide links
+\usepackage[pdfusetitle]{hyperref}
+    \hypersetup{hidelinks}
+
+
+% Gestion sommaire
+\usepackage{etoc}
+
+% Lorem ipsum
+\usepackage{lipsum}

@@ -1,0 +1,40 @@
+\documentclass[11pt]{report}
+
+\usepackage{lib/utc-report-template}
+\usepackage{lib/glossaire}
+
+
+
+
+\author{Prenom NOM}
+\title{Rapport de stage}
+
+\setcounter{secnumdepth}{2}
+
+
+\begin{document}
+    \include{lib/macro}
+    \frontpage
+    \pagenumbering{arabic}
+    
+    \include{parts/1-Remerciements.tex}
+    \setcounter{tocdepth}{1}
+    \tableofcontents
+    
+    
+    \include{parts/2-Introduction}
+    \include{parts/02-presentation}
+    \include{parts/03-mission}
+    \include{parts/04-mes_realisations}
+    \include{parts/05-conclusion}
+    \clearpage
+    \printglossaries
+    
+    \printbibliography[heading=bibintoc]
+    
+    \listoffigures
+    %\listoftables
+
+    \include{parts/06-Annexes} 
+    
+\end{document}
