@@ -2,7 +2,7 @@
 
 
 ## Utilisations sur Overleaf
-(Open as template)[https://www.overleaf.com/latex/templates/utc-tn09-slash-tn10/zbtpffvtkyyp]
+Overleaf : [Open as template](https://www.overleaf.com/latex/templates/utc-tn09-slash-tn10/zbtpffvtkyyp)
 
 ![](https://github.com/GuillaumeHERMOSO/Rapport-TN09-TN10-LaTeX-UTC/blob/main/rapport.png)
 
