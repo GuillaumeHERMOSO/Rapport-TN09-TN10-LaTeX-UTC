@@ -1,4 +1,9 @@
 # Template LaTeX pour Rapport de Stage TN09-TN10
+
+
+## Utilisations sur Overleaf
+(Open as template)[https://www.overleaf.com/latex/templates/utc-tn09-slash-tn10/zbtpffvtkyyp]
+
 ![](https://github.com/GuillaumeHERMOSO/Rapport-TN09-TN10-LaTeX-UTC/blob/main/rapport.png)
 
 Ce template LaTeX est conçu pour les rapports de stage TN09 ou TN10 à l'Université de technologie de Compiègne. 
@@ -11,7 +16,8 @@ Inspiré par le template de l'UTT (Axel Mousset, Aurélien Labate): [Template UT
 
 Modifiez-le selon vos besoins.
 
-## Utilisations sur Overleaf
+
+## Utilisations sur Overleaf par Zip
 
 Pour utiliser ce template sur Overleaf, suivez ces étapes :
 
